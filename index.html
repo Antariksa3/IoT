@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>PTS IoT</title>
+</head>
+
+<body>
+    <section>
+        <img src="image/stars.png" id="stars">
+        <img src="image/moon.png" id="moon">
+        <img src="image/mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Arduino</h2>
+        <a href="#sec" id="btn">Pelajari</a>
+        <img src="image/mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <div class="shape shape__big"></div>
+        <!-- <div class="shape shape__small"></div> -->
+        <h2>Apa itu Arduino?</h2>
+        <p>Jadi Arduino adalah pengendali mikro single-board yang bersifat open source yang dirancang untuk memudahkan
+            penggunaan elektronik dalam berbagai bidang. Perangkat kerasnya memiliki prosesor Atmel AVR dan softwarenya
+            memiliki bahasa pemrograman sendiri.<br><br>Arduino merupakan open source yang ditujukan kepada siapa saja
+            yang
+            ingin membuat prototype peralatan elektronik interaktif berdasarkan hardware maupun software yang fleksibel
+            dan mudah digunakan. Mikrokontroler diprogram menggunakan bahasa pemrograman arduino yang memiliki kemiripan
+            syntax dengan bahasa pemrograman C. Karena sifatnya yang terbuka maka siapa saja dapat mengunduh skema
+            hardware arduino dan membuat sendiri Arduinonya. <br><br>Mikrokontroler Arduino menggunakan keluarga
+            mikrokontroler ATMega yang dirilis oleh Atmel, namun ada individu/perusahaan yang membuat clone arduino
+            dengan menggunakan mikrokontroler lain dan tetap kompatibel dengan software Arduino IDE. Hal ini bertujuan
+            untuk fleksibilitas, program dimasukkan melalui bootloader meskipun ada opsi untuk mem-bypass bootloader dan
+            menggunakan pengunduh file .hex untuk memprogram mikrokontroler secara langsung melalui port ISP.
+            <br><br>Layanan Platform Arduino telah menjadi sangat populer di kalangan orang-orang yang baru memulai
+            dengan
+            elektronik. Tidak seperti kebanyakan papan sirkuit yang dapat diprogram sebelumnya, Arduino tidak memerlukan
+            perangkat keras terpisah (disebut downloader atau programmer) untuk memuat kode baru ke papan – Anda cukup
+            menggunakan kabel USB. Selain itu, Arduino IDE menggunakan versi yang disederhanakan dari C++, hal ini
+            membuatnya pengguna lebih mudah untuk belajar memprogram Arduino.
+        </p><br>
+        <div class="shape shape__small"></div>
+        <h2>Apa Fungsi Arduino?</h2>
+        <p>Software dan hardware Arduino dirancang dengan mudah digunakan untuk seniman, perancang, penggemar, peretas,
+            pemula, dan siapa pun yang tertarik untuk membuat objek atau lingkungan interaktif. Arduino dapat
+            berinteraksi dengan tombol, LED, motor, speaker, unit GPS, kamera, internet, dan bahkan ponsel pintar atau
+            TV Anda! Fleksibilitas ini dikombinasikan dengan fakta bahwa software Arduino dapat didownload secara
+            gratis, harga boardnya atau papan hardware cukup murah, dan Arduino cukup mudah dipelajari. Faktanya,
+            Arduino memilik komunitas pengguna yang besar yang telah berkontribusi mengasilkan kode atau script dan
+            library atau paket script untuk membuat berbagai macam Proyek berbasis Arduino. </p><br>
+        <div class="shape shape__small"></div>
+        <h2>Apa Kelebihan Arduino?</h2>
+        <p>
+            <b>Murah atau Terjangkau</b> – Papan atau Board (perangkat keras) Arduino biasanya dijual relatif murah
+            (antara 299ribu hingga 799ribuan rupiah saja) dibandingkan dengan platform mikrokontroler pro lainnya. Jika
+            ingin lebih murah lagi, tentu bisa dibuat sendiri dan itu sangat mungkin sekali karena semua sumber daya
+            seperti rangkaian untuk membuat Arduino sendiri tersedia lengkap di website Arduino.cc bahkan di
+            website-website komunitas Arduino lainnya juga ada. Tidak hanya cocok untuk Windows, namun juga cocok
+            bekerja di
+            Linux maupun MacOS.<br><br>
+
+            <b>Pemrogramannya Sederhana dan Mudah</b> – Perlu diketahui bahwa lingkungan pemrograman di
+            Arduino mudah digunakan untuk pemula, dan cukup fleksibel bagi mereka yang sudah tingkat lanjut. Untuk
+            guru/dosen, Arduino berbasis pada lingkungan pemrograman Processing, sehingga jika mahasiswa atau
+            murid-murid terbiasa menggunakan Processing tentu saja akan mudah menggunakan Arduino. Bahasa yang digunakan
+            Arduino adalah bahasa C++.<br><br>
+
+            <b>Memiliki Software yang Open Source</b> – Perangkat lunak Arduino IDE dipublikasikan sebagai Open Source,
+            tersedia bagi para programer berpengalaman untuk pengembangan project lebih lanjut. Bahasanya bisa
+            dikembangkan lebih lanjut melalui pustaka-pustaka C++ yang berbasis pada Bahasa C untuk AVR.<br><br>
+
+            <b>Desain Hardware yang Open Source</b> – Perangkat keras Arduino berbasis mikrokontroler ATMEGA8,
+            ATMEGA168,
+            ATMEGA328 dan ATMEGA1280 (yang terbaru ATMEGA2560). Dengan demikian siapa saja bisa membuatnya (dan kemudian
+            bisa menjualnya) perangkat keras Arduino ini, apalagi bootloader tersedia langsung dari perangkat lunak
+            Arduino IDE-nya. Bisa juga menggunakan breadboard atau Project Board untuk membuat perangkat Arduino beserta
+            periperal-periperal lain yang dibutuhkan.
+        </p>
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+    </div>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 2 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+
+
+        })
+
+        function scrollUp() {
+            const scrollUp = document.getElementById('scroll-up')
+            if (this.scrollY >= 300) scrollUp.classList.add('show-scroll');
+            else scrollUp.classList.remove('show-scroll')
+        }
+        window.addEventListener('scroll', scrollUp)
+    </script>
+</body>
+
+</html>
