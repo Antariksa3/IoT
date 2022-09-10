@@ -130,6 +130,21 @@ section img#mountains_front {
     bottom: 3rem;
 }
 
+::-webkit-scrollbar {
+    width: .6rem;
+    background-color: hsl(219, 4%, 16%);
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: hsl(219, 4%, 24%);
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(219, 4%, 32%);
+}
+
 .shape {
     background-color: rgba(170, 0, 255, 0.4);
     filter: blur(112px);
