@@ -11,78 +11,186 @@
 </head>
 
 <body>
-    <section>
-        <img src="image/stars.png" id="stars">
-        <img src="image/moon.png" id="moon">
-        <img src="image/mountains_behind.png" id="mountains_behind">
-        <h2 id="text">Arduino</h2>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#pengertian" class="nav__link active-link">Pengertian</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#unsur" class="nav__link">Unsur</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#manfaat" class="nav__link">Manfaat</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#kesimpulan" class="nav__link">Kesimpulan</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="parallax">
+        <img src="image/stars.png" id="stars" class="image">
+        <img src="image/moon.png" id="moon" class="image">
+        <img src="image/mountains_behind.png" id="mountains_behind" class="image">
+        <h2 id="text" class="title">Internet of Things</h2>
         <a href="#sec" id="btn">Pelajari</a>
-        <img src="image/mountains_front.png" id="mountains_front">
+        <img src="image/mountains_front.png" id="mountains_front" class="image">
     </section>
-    <div class="sec" id="sec">
-        <div class="shape shape__big"></div>
-        <!-- <div class="shape shape__small"></div> -->
-        <h2>Apa itu Arduino?</h2>
-        <p>Jadi Arduino adalah pengendali mikro single-board yang bersifat open source yang dirancang untuk memudahkan
-            penggunaan elektronik dalam berbagai bidang. Perangkat kerasnya memiliki prosesor Atmel AVR dan softwarenya
-            memiliki bahasa pemrograman sendiri.<br><br>Arduino merupakan open source yang ditujukan kepada siapa saja
-            yang
-            ingin membuat prototype peralatan elektronik interaktif berdasarkan hardware maupun software yang fleksibel
-            dan mudah digunakan. Mikrokontroler diprogram menggunakan bahasa pemrograman arduino yang memiliki kemiripan
-            syntax dengan bahasa pemrograman C. Karena sifatnya yang terbuka maka siapa saja dapat mengunduh skema
-            hardware arduino dan membuat sendiri Arduinonya. <br><br>Mikrokontroler Arduino menggunakan keluarga
-            mikrokontroler ATMega yang dirilis oleh Atmel, namun ada individu/perusahaan yang membuat clone arduino
-            dengan menggunakan mikrokontroler lain dan tetap kompatibel dengan software Arduino IDE. Hal ini bertujuan
-            untuk fleksibilitas, program dimasukkan melalui bootloader meskipun ada opsi untuk mem-bypass bootloader dan
-            menggunakan pengunduh file .hex untuk memprogram mikrokontroler secara langsung melalui port ISP.
-            <br><br>Layanan Platform Arduino telah menjadi sangat populer di kalangan orang-orang yang baru memulai
-            dengan
-            elektronik. Tidak seperti kebanyakan papan sirkuit yang dapat diprogram sebelumnya, Arduino tidak memerlukan
-            perangkat keras terpisah (disebut downloader atau programmer) untuk memuat kode baru ke papan – Anda cukup
-            menggunakan kabel USB. Selain itu, Arduino IDE menggunakan versi yang disederhanakan dari C++, hal ini
-            membuatnya pengguna lebih mudah untuk belajar memprogram Arduino.
-        </p><br>
-        <div class="shape shape__small"></div>
-        <h2>Apa Fungsi Arduino?</h2>
-        <p>Software dan hardware Arduino dirancang dengan mudah digunakan untuk seniman, perancang, penggemar, peretas,
-            pemula, dan siapa pun yang tertarik untuk membuat objek atau lingkungan interaktif. Arduino dapat
-            berinteraksi dengan tombol, LED, motor, speaker, unit GPS, kamera, internet, dan bahkan ponsel pintar atau
-            TV Anda! Fleksibilitas ini dikombinasikan dengan fakta bahwa software Arduino dapat didownload secara
-            gratis, harga boardnya atau papan hardware cukup murah, dan Arduino cukup mudah dipelajari. Faktanya,
-            Arduino memilik komunitas pengguna yang besar yang telah berkontribusi mengasilkan kode atau script dan
-            library atau paket script untuk membuat berbagai macam Proyek berbasis Arduino. </p><br>
-        <div class="shape shape__small"></div>
-        <h2>Apa Kelebihan Arduino?</h2>
-        <p>
-            <b>Murah atau Terjangkau</b> – Papan atau Board (perangkat keras) Arduino biasanya dijual relatif murah
-            (antara 299ribu hingga 799ribuan rupiah saja) dibandingkan dengan platform mikrokontroler pro lainnya. Jika
-            ingin lebih murah lagi, tentu bisa dibuat sendiri dan itu sangat mungkin sekali karena semua sumber daya
-            seperti rangkaian untuk membuat Arduino sendiri tersedia lengkap di website Arduino.cc bahkan di
-            website-website komunitas Arduino lainnya juga ada. Tidak hanya cocok untuk Windows, namun juga cocok
-            bekerja di
-            Linux maupun MacOS.<br><br>
 
-            <b>Pemrogramannya Sederhana dan Mudah</b> – Perlu diketahui bahwa lingkungan pemrograman di
-            Arduino mudah digunakan untuk pemula, dan cukup fleksibel bagi mereka yang sudah tingkat lanjut. Untuk
-            guru/dosen, Arduino berbasis pada lingkungan pemrograman Processing, sehingga jika mahasiswa atau
-            murid-murid terbiasa menggunakan Processing tentu saja akan mudah menggunakan Arduino. Bahasa yang digunakan
-            Arduino adalah bahasa C++.<br><br>
+    <main class="main" id="main">
+        <div class="sec" id="sec">
+            <div class="shape shape__big"></div>
+            <div class="shape shape__small"></div>
 
-            <b>Memiliki Software yang Open Source</b> – Perangkat lunak Arduino IDE dipublikasikan sebagai Open Source,
-            tersedia bagi para programer berpengalaman untuk pengembangan project lebih lanjut. Bahasanya bisa
-            dikembangkan lebih lanjut melalui pustaka-pustaka C++ yang berbasis pada Bahasa C untuk AVR.<br><br>
+            <section class="section" id="pengertian">
+                <h2>Apa itu Internet of Things?</h2>
+                <p>Internet of things merupakan sebuah konsep di mana suatu benda atau objek ditanamkan
+                    teknologi-teknologi
+                    seperti sensor dan software dengan tujuan untuk berkomunikasi, mengendalikan, menghubungkan, dan
+                    bertukar data melalui perangkat lain selama masih terhubung ke internet. <br><br>
 
-            <b>Desain Hardware yang Open Source</b> – Perangkat keras Arduino berbasis mikrokontroler ATMEGA8,
-            ATMEGA168,
-            ATMEGA328 dan ATMEGA1280 (yang terbaru ATMEGA2560). Dengan demikian siapa saja bisa membuatnya (dan kemudian
-            bisa menjualnya) perangkat keras Arduino ini, apalagi bootloader tersedia langsung dari perangkat lunak
-            Arduino IDE-nya. Bisa juga menggunakan breadboard atau Project Board untuk membuat perangkat Arduino beserta
-            periperal-periperal lain yang dibutuhkan.
-        </p>
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class="ri-arrow-up-line"></i>
-        </a>
-    </div>
+                    IoT memiliki hubungan yang erat dengan istilah machine-to-machine atau M2M. Seluruh alat yang
+                    memiliki
+                    kemampuan komunikasi M2M ini sering disebut dengan perangkat cerdas atau smart devices. Perangkat
+                    cerdas
+                    ini diharapkan dapat membantu kerja manusia dalam menyelesaikan berbagai urusan atau tugas yang ada.
+                </p>
+            </section>
+
+            <section class="section" id="unsur">
+                <h2>Unsur-Unsur Internet of Things</h2>
+                <p>Untuk membuat suatu ekosistem IoT, kita tidak hanya memerlukan perangkat-perangkat yang pintar,
+                    melainkan juga berbagai unsur pendukung lain di dalamnya. Berikut adalah berbagai unsur pembentuk
+                    internet of things: <br><br>
+                </p>
+
+                <ul class="unlist">
+                    <li>
+                        <h3>Artificial intelligence (kecerdasan buatan)</h3>
+                        <p>Yang pertama ada kecerdasan buatan. Kecerdasan buatan atau artificial intelligence (AI)
+                            adalah sistem kecerdasan yang dimiliki oleh manusia yang diimplementasikan atau diprogram di
+                            dalam mesin agar mesin dapat dapat berpikir dan berlaku layaknya manusia. AI ini sendiri
+                            memiliki beberapa cabang, salah satunya adalah machine learning.<br><br>
+
+                            Dalam IoT, hampir semua mesin atau alat dapat menjadi mesin pintar. Itu berarti IoT sangat
+                            berdampak pada seluruh aspek kehidupan kita. AI ini bertugas untuk mengumpulkan data,
+                            perancangan dan pengembangan algoritma, serta pemasangan jaringan.</p>
+                    </li><br>
+                    <li>
+                        <h3>Sensor</h3>
+                        <p>Berikutnya ada sensor. Unsur ini merupakan unsur pembeda mesin IoT dengan mesin canggih
+                            lainnya. Dengan adanya sensor ini mesin mampu menentukan instrumen yang dapat mengubah mesin
+                            IoT dari yang semula bersifat pasif menjadi mesin atau alat yang bersifat aktif dan
+                            terintegrasi.</p>
+                    </li><br>
+                    <li>
+                        <h3>Konektivitas</h3>
+                        <p>Yang terakhir adalah konektivitas. Konektivitas juga biasa disebut sebagai koneksi antar
+                            jaringan. Dalam dunia IoT sendiri ada kemungkinan untuk kita membuat jaringan baru, jaringan
+                            yang khusus digunakan untuk perangkat IoT.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="section" id="manfaat">
+                <h2>Manfaat Internet of Things <br> di berbagai bidang</h2>
+                <p>Setelah mengetahui penjelasan dan unsur-unsur untuk membentuk suatu ekosistem IoT, sekarang kami akan
+                    menjelaskan apa saja manfaat internet of things dalam berbagai bidang. <br><br>
+
+                    Dalam penerapannya sendiri internet of things ini membawa banyak sekali manfaat. Selain manfaat
+                    utamanya untuk mempermudah pekerjaan manusia, internet of things juga bermanfaat dalam berbagai
+                    bidang. Berikut beberapa diantaranya: <br><br>
+                </p>
+
+                <ul class="unlist">
+                    <li>
+                        <h3>Pertanian</h3>
+                        <p>Pertama-tama kita bahas mulai dari sektor pertanian atau agriculture. Penerapan IoT dalam
+                            sektor pertanian dapat dilakukan dengan berbagai macam cara. Salah satunya dalam urusan
+                            pengumpulan data. Data-data yang dikumpulkan dapat berupa suhu, kelembapan, curah hujan,
+                            kadar air dalam tanah, dan pemantauan hama. <br><br>
+
+                            Contohnya, petani dapat mengetahui data-data yang penting seperti kadar air dalam tanah dan
+                            suhu sekitar dengan sensor yang ditanamkan. Data-data yang terkumpul dapat digunakan untuk
+                            mengambil sebuah keputusan guna meningkatkan kualitas dan kuantitas, meminimalkan risiko,
+                            dan mengurangi usaha yang diperlukan untuk mengelola pertanian.</p>
+                    </li><br>
+                    <li>
+                        <h3>Kesehatan</h3>
+                        <p>Selanjutnya adalah sektor medis dan kesehatan. Dalam dunia kesehatan, internet of things
+                            terus dikembangkan. Direncanakan ke depannya seluruh hasil pemeriksaan dapat langsung
+                            diterima oleh para tenaga medis atau rumah sakit. Data-data yang dikirimkan seperti halnya
+                            tekanan darah, riwayat penyakit, penyakit yang sedang dialami, dan lain-lain. <br><br>
+
+                            Sebenarnya, teknologi IoT saat ini sudah diterapkan dalam sektor kesehatan ini, contohnya
+                            seperti robot perawat di sebiah klinik di Moskow yang membantu tugas dari para tenaga
+                            kesehatan di masa pandemi sekarang ini.</p>
+                    </li><br>
+                    <li>
+                        <h3>Transportasi</h3>
+                        <p>Berikutnya adalah sektor transportasi. IoT dapat membantu manusia dalam mengintegrasikan,
+                            mengontrol, dan memproses informasi pada sistem transportasi. Penerapan internet of things
+                            ini berkembang sangat pesat dan dapat diimplementasikan pada mesin kendaraan atau pada
+                            fungsi kemudinya. <br><br>
+
+                            Salah satu contoh internet of things dalam bidang transportasi adalah mobil yang dapat
+                            memarkir sendiri dan mobil yang dapat berjalan sendiri (autopilot). Diharapkan dengan adanya
+                            IoT dalam sektor transportasi ini angka kecelakaan dapat jauh menurun.</p>
+                    </li><br>
+                    <li>
+                        <h3>Otomatisasi rumah</h3>
+                        <p>Selanjutnya dalam sektor rumah. Perangkat internet of things juga tidak hanya bisa digunakan
+                            dalam sektor-sektor usaha saja, tetapi ia juga bisa digunakan untuk keperluan pribadi. Kamu
+                            dapat membuat rumahmu menjadi serba otomatis lho, mulai dari menghidupkan lampu,
+                            menghidupkan perangkat elektronik, dan sampai membuka pintu rumah. Perangkat-perangkat itu
+                            disebut sebagai smart home peripheral atau perangkat rumah pintar. Jika kamu menerapkan IoT
+                            dalam rumah, secara tidak langsung kamu sudah memiliki smart home. Keren, kan? <br><br>
+
+                            Bukan hanya soal kemudahan, kamu juga dapat menghemat energi. Itu karena kamu dapat
+                            mengendalikan perangkat-perangkat pintar di rumahmu dari jarak jauh. Sehingga, otomatis
+                            tidak ada energi yang terbuang sia-sia. <br><br>
+
+                            Contoh internet of things dalam rumah adalah lampu yang dapat menyala otomatis pada malam
+                            hari, kunci pintu yang dibuka dengan sidik jari atau dengan smartphone, tempat makan
+                            otomatis untuk hewan, alat penyiram bunga otomatis, dan masih banyak lagi.</p>
+                    </li><br>
+                    <li>
+                        <h3>Lingkungan</h3>
+                        <p>Yang terakhir adalah penerapan IoT dalam sektor lingkungan. Biasanya untuk sektor lingkungan
+                            ini menggunakan aplikasi dan perangkat IoT yang menggunakan sensor.
+                            Contohnya seperti alat yang dapat memantau kualitas udara, alat yang dapat dipasangkan ke
+                            satwa liar dalam penangkaran, pengecekan kondisi air, dan lain-lain. Bahkan internet of
+                            things juga dapat dimanfaatkan untuk sistem peringatan dini bencana.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="section" id="kesimpulan">
+                <h2>Kesimpulan</h2>
+                <p>Jadi itulah pembahasan mengenai internet of things. Bagaimana, menarik, kan? Perangkat-perangkat IoT
+                    yang ada saat ini masih dapat berkembang lagi menjadi lebih canggih di masa depan dan diharapkan
+                    dapat lebih membantu manusia dalam segala sektor. <br><br>
+
+                    Diharapkan setelah kamu membaca artikel ini kamu menjadi tertarik untuk membuat dan mengembangkan
+                    perangkat-perangkat IoT lain yang berguna untuk manusia. Sampai jumpa di artikel selanjutnya ya.
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer section">
+        <span class="footer__copy">
+            &#169; Antariksa. All rigths reserved
+        </span>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
 
     <script>
         let stars = document.getElementById('stars');
@@ -91,7 +199,6 @@
         let text = document.getElementById('text');
         let btn = document.getElementById('btn');
         let mountains_front = document.getElementById('mountains_front');
-        let header = document.querySelector('header');
 
         window.addEventListener('scroll', function () {
             let value = window.scrollY;
@@ -102,9 +209,6 @@
             text.style.marginRight = value * 2 + 'px';
             text.style.marginTop = value * 1.5 + 'px';
             btn.style.marginTop = value * 1.5 + 'px';
-            header.style.top = value * 0.5 + 'px';
-
-
         })
 
         function scrollUp() {
@@ -113,6 +217,33 @@
             else scrollUp.classList.remove('show-scroll')
         }
         window.addEventListener('scroll', scrollUp)
+
+        function scrollHeader() {
+            const header = document.getElementById('header')
+            if (this.scrollY >= 50) header.classList.add('scroll-header');
+            else header.classList.remove('scroll-header')
+        }
+        window.addEventListener('scroll', scrollHeader)
+
+        const sections = document.querySelectorAll('section[id]')
+
+        const scrollActive = () => {
+            const scrollY = window.pageYOffset
+
+            sections.forEach(current => {
+                const sectionHeight = current.offsetHeight,
+                    sectionTop = current.offsetTop - 40,
+                    sectionId = current.getAttribute('id'),
+                    sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
+
+                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                    sectionsClass.classList.add('active-link')
+                } else {
+                    sectionsClass.classList.remove('active-link')
+                }
+            })
+        }
+        window.addEventListener('scroll', scrollActive)
     </script>
 </body>
 
